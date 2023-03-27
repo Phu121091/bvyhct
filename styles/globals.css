@@ -124,3 +124,6 @@ a {
     font-size: 12px;
   }
 }
+#act{
+  display: none;
+}

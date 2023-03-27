@@ -1,0 +1,129 @@
+.header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+}
+.call-ambulance{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15%;
+     div{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 10px;
+        }
+     }
+     border-bottom: 0.5px rgb(139, 138, 138,0.4) solid;
+}
+.top-header{
+    display: flex;
+    padding: 0 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    img{
+     height: 100px !important;
+     width: auto !important;
+   }
+}
+.item-contact{
+    // padding: 20px 0;
+    padding-left: 20px;
+    flex: 1;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px rgb(139, 138, 138,0.4) solid;
+}
+.icon-header{
+    font-size: 40px;
+    color:#0392ce;
+}
+.text-contact{
+    padding: 0 20px;
+    
+   
+    .text-title{
+        color:#0392ce;
+        font-weight: 600;
+    }
+}
+.search{
+    padding: 20px;
+    width: 30%;
+    padding-right: 0;
+    position: relative;
+    input{
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 0.5px rgb(139, 138, 138,0.4) solid;
+    }
+    svg{
+        position: absolute;
+        top:30px;
+        right: 30px;
+        font-size: 20px;
+    }
+}
+
+//bot
+.bot-header{
+    padding:0 15%;
+    border: 0.5px rgb(139, 138, 138,0.4) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a:hover{
+        color: #0392ce;
+    }
+    top:10px;
+    position: sticky;
+}
+.book{
+    height: 100%;
+    padding:20px;
+    background-color:#0392ce;
+    color: white;
+    border: 1px solid #0392ce;
+    svg{
+        margin-right: 10px;
+    }
+}
+.menu-link{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    .list-link{
+        display: none;
+        position: absolute;
+        width: fit-content;
+        background-color: white;
+        top:100%;
+        flex-direction: column;
+        left: -20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: 0.2s;
+        z-index: 2;
+        a{
+            white-space: nowrap;
+            padding: 10px 20px;
+        }
+    }
+}
+.menu-link:hover{
+    .list-link{
+        display: flex;
+    }
+}
