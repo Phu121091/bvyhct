@@ -1,0 +1,39 @@
+.introduce-container{
+    width:100vw;
+    height:300px;
+    background-image: url(../../public/assets/istockphoto-638377134-612x612.jpg);
+    background-size: cover;
+}
+.carousel-container{
+    position: relative;
+    z-index: 10;
+}
+.introduce-container-overlay{
+    width:100%;
+    height:inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    z-index: 1;
+}
+.h6{
+    color:blueviolet;
+    font-size: medium;
+}
+
+.card{
+    width:18%;
+    text-align: center;
+}
+.icon{
+    color: white;
+    font-size: 56px;
+}
+.carousel-container{
+    height:300px;
+}
+.carousel-indicators button {
+
+    background-color: red;
+}
