@@ -1,0 +1,138 @@
+.introduce-container{
+    margin-top: 150px;
+    width:100%;
+    height:300px;
+    background-image: url(../../public/assets/istockphoto-638377134-612x612.jpg);
+    background-size: cover;
+}
+.carousel-container{
+    position: relative;
+    width: 100%;
+    max-width: 100% !important;
+    background-color: rgba(69, 81, 134, 0.7);
+    margin: 0;
+    // z-index: ;
+}
+// .introduce-container-overlay{
+//     width:100%;
+//     height:inherit;
+//     background-color: rgb(0, 191, 255,0.3);
+//     z-index: 1;
+// }
+.h6{
+    color:blueviolet;
+    font-size: medium;
+}
+
+.card{
+    width:18%;
+    text-align: center;
+}
+.icon{
+    color: white;
+    font-size: 56px;
+}
+.carousel-container{
+    height:300px;
+}
+.carousel-indicators button {
+
+    background-color: red;
+}
+
+
+
+// Department area
+
+
+.Department-container{
+
+    position: relative;
+}
+.listcards{
+    overflow-x: scroll;
+}
+.department-card-container{
+    border: 2px solid rgb(232,232,232);
+}
+.departments-card{
+    border: none;
+}
+
+.departments-card-body{
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+}
+.departments-icon-container{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.4);
+    height: 120px;
+}
+.d-icon{
+    font-size:80px;
+    color: blue;
+    text-align: center;
+}
+.departments-card-item{
+    list-style: none;
+    color:  rgba(0,0,0,0.7);
+}
+
+.departments-card-button{
+    width:100px;
+    height: 35px;
+    border-radius: 20px 4px 20px 4px;
+    border: 2px solid rgb(232,232,232);
+
+}
+.department-card-container:hover .departments-icon-container{
+    background-color: rgba(37, 37, 250, 0.8);
+    transition: 1s ease-in;
+}
+.department-card-container:hover .d-icon {
+    color: white;
+}
+.departments-card-button:hover{
+    background-color: rgba(37, 37, 250, 0.8);
+    transition: 1s ease-in;
+}
+//news
+.news-container{
+    padding: 5% 20%;
+    background-color: #fcfcfc;
+    h2{
+        padding: 15px 0;
+        hr{
+            color:#0392ce;
+            width: 80px;
+        }
+    }
+    .news-list{
+        padding: 2% 0;
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+    }
+    .news-item-container{
+        width: 32%;
+        height: 100%;
+    }
+}
+
+
+//video
+.intro-main{
+    .video-container{
+        float: right;
+        width: 60%;
+        padding-left: 5%;
+        .video{
+            width: 100%;
+        }
+    }
+    text-align: justify;
+    text-justify: inter-word;
+}

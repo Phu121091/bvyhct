@@ -1,9 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
+import style from '@/styles/Home.module.css';
+import classNames from "classnames/bind";
+import Banner from '@/components/Banner/Banner';
+import Introduce from '@/views/home/Introduce';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Deapartments from '@/views/home/Deapartments';
+import News from '@/views/home/News';
+import Introduce2 from '@/views/home/Introduce2';
+
+const cx = classNames.bind(style);
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +23,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  
+     <div className={cx('container')}>
+      <Banner/>
+      <Introduce2/>
+      <Introduce/>
+      <Deapartments/>
+      <News/>
+     </div>
     </>
   )
 }

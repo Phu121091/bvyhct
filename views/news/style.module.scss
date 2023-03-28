@@ -1,0 +1,17 @@
+.news-main{
+    display: flex;
+    padding: 5% 20%;
+}
+.news-list{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .news-item-container{
+       width: 48%;
+       margin-bottom: 4%;
+    }
+}
+.right-bar{
+    width: 30%;
+}
