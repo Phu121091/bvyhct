@@ -21,7 +21,7 @@ const Header = () => {
 
   useEffect(() => {
     const handelScroll = () => {
-       
+
         if (window.scrollY > 70) {
             setbgheader('act')
         }
@@ -46,12 +46,12 @@ const Header = () => {
           Dịch vụ cấp cứu và xe cứu thương trong vòng 24 giờ : 0243 359.8363
         </div>
         <div className={cx('language')}>
-           <Image src='/flagvn.jpg' width={30} height={30}/>vn
+           <Image src='/flagvn.jpg' width={30} height={30} alt='icon'/>vn
         </div>
       </div>
       <div className={cx("top-header")} >
         <div className={cx("logo")}>
-          <Image src={Logo} width='200' height='200'/>
+          <Image src={Logo} width='200' height='200' alt='icon'/>
         </div>
         <div className={cx("item-contact")}>
           <MdPhoneInTalk className={cx("icon-header")}/>
@@ -78,16 +78,16 @@ const Header = () => {
       <div className={cx("bot-header")}>
      {MenuLink.map((d,i)=>
      d.list?
-     <div className={cx("menu-link")}>{d.title}<BiChevronDown/>
+     <div className={cx("menu-link")} key={i}>{d.title}<BiChevronDown/>
      <div className={cx("list-link")}>
       {d.list.map((item,index)=>
-      <Link href={item.link}>{item.title}</Link>
+      <Link href={item.link} key={index}>{item.title}</Link>
       )}
      </div>
      <div className={cx("hr")}/>
      </div>
      :
-     <Link href={d.link} className={cx("menu-link")}>{d.title}
+     <Link href={d.link} className={cx("menu-link")} key={i}>{d.title}
      <div className={cx("hr")}/>
      </Link>
      )}

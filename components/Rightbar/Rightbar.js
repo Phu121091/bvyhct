@@ -21,18 +21,18 @@ const Rightbar = () => {
             <h5>Danh mục</h5>
           {Categories.map((item,index)=>
           <p key={index}>{item.title} <span>({item.amount})</span></p>
-          )} 
+          )}
         </div>
         <div className={cx('posts')}>
             <h5>Tin nổi bật</h5>
           {ListNews.slice(0,3).map((item,index)=>
-          <div className={cx('item-post')}>
+          <div className={cx('item-post')} key={index}>
             <Image src={item.img} width='80' height='80' alt={item.title}/>
             <div className={cx('text-post')}>
                 <Link href='/news/1' >{item.title}</Link>
                 <p>{item.date}</p>
             </div>
-            </div>
+          </div>
           )}
         </div>
     </div>

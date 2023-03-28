@@ -11,7 +11,7 @@ import Pagination from '@/components/Pagination';
 
 const cx = classNames.bind(style);
 
-const index = () => {
+const Index = () => {
   const [page, setPage] = useState(1);
   const lastIndex = page * 6
     const firstIndex = lastIndex - 6;
@@ -27,7 +27,7 @@ const index = () => {
           )}
           <Pagination totalPosts={ListNews.length} postPerPage={6} setPage={setPage} pageIndex={page} />
         </div>
-         
+
         <div className={cx('right-bar')}>
             <Rightbar/>
         </div>
@@ -36,4 +36,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
