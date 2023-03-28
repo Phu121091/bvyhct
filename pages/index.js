@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import style from '@/styles/Home.module.css';
 import classNames from "classnames/bind";
 import Banner from '@/components/Banner/Banner';
+import Introduce from '@/views/home/Introduce';
 
 const cx = classNames.bind(style);
 const inter = Inter({ subsets: ['latin'] })
@@ -19,6 +20,7 @@ export default function Home() {
       </Head>
      <div className={cx('container')}>
       <Banner/>
+      <Introduce/>
      </div>
     </>
   )
