@@ -7,6 +7,8 @@ import Banner from '@/components/Banner/Banner';
 import Introduce from '@/views/home/Introduce';
 
 const cx = classNames.bind(style);
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
