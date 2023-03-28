@@ -28,6 +28,7 @@ function Deapartments() {
                 {DepartmentLists.description.map((items, i) => (
                   <li className={cx("departments-card-item")} key={i}>{items}</li>
                 ))}
+                aaaa
               </Card.Text>
             </div>
 
