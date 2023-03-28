@@ -119,25 +119,25 @@ export const ListNews = [
   },
 ];
 
-const Categories = [
+export const Categories = [
     { 
         title: "Hoạt động bệnh viện", 
         amount:80
     },
     { 
-        title: "Hoạt động bệnh viện",
-        amount:80
+        title: "Thông tin y học trong nước",
+        amount:25
     },
     { 
-        title: "Hoạt động bệnh viện", 
-        amount:80
+        title: "Thông tin y học nước ngoài", 
+        amount:81
     },
     { 
-        title: "Hoạt động bệnh viện",
-        amount:80 
+        title: "Nghiên cứu khoa học",
+        amount:45 
     },
     { 
-        title: "Hoạt động bệnh viện", 
-        amount:80
+        title: "Đào tạo – Tập huấn", 
+        amount:55
     }
 ];
