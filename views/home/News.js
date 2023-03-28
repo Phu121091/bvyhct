@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ListNews } from '@/public/data';
 import {FaCalendarAlt} from 'react-icons/fa';
 import Link from 'next/link';
+import Newscard from '@/components/Newscard/Newscard';
 
 const cx = classNames.bind(style);
 
@@ -16,18 +17,9 @@ const News = () => {
         </h2>
         <div className={cx('news-list')}>
             {ListNews.slice(0,3).map((d,i)=>
-            <Link href='/news/1' className={cx('news-item')} key={i}>
-                <div className={cx('img')}>
-                <Image src={d.img} width='500' height='500' alt={d.title}/>
-                </div>
-                <h6>{d.title}</h6>
-                <div className={cx('space')}/>
-                <p className={cx('news-des')}>{d.description}</p>
-                <p className={cx('news-date')}>
-                    <FaCalendarAlt/>
-                    {d.date}
-                </p>
-            </Link>
+            <div className={cx('news-item-container')} key={i} >
+             <Newscard data={d}/>
+            </div>
             )}
         </div>
     </div>
