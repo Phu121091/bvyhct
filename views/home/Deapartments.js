@@ -18,8 +18,8 @@ function Deapartments() {
     <div key={DepartmentLists.id} className={cx("p-3","m-2","department-card-container")}>
       <Card className={cx("departments-card")} style={{ width: "16rem" }} >
           <div className={cx("departments-icon-container","p-3")}>
-            {/* <CiStethoscope className={cx("d-icon", "text-center")} /> */}
-            {DepartmentLists.icon}
+            <CiStethoscope className={cx("d-icon", "text-center")} />
+            {/* {DepartmentLists.icon} */}
           </div>
           <div className={cx("departments-card-body","my-3")}>
             <Card.Title className={cx("text-center")}>{DepartmentLists.name}</Card.Title>
