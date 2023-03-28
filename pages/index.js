@@ -7,6 +7,8 @@ import Banner from '@/components/Banner/Banner';
 import Introduce from '@/views/home/Introduce';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Deapartments from '@/views/home/Deapartments';
+import News from '@/views/home/News';
+import Introduce2 from '@/views/home/Introduce2';
 
 const cx = classNames.bind(style);
 
@@ -23,8 +25,10 @@ export default function Home() {
       </Head>
      <div className={cx('container')}>
       <Banner/>
+      <Introduce2/>
       <Introduce/>
       <Deapartments/>
+      <News/>
      </div>
     </>
   )

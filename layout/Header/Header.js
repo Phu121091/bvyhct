@@ -43,7 +43,7 @@ const Header = () => {
       <div className={cx('call-ambulance')}>
         <div className={cx('call')}>
           <Image src={Logo24h} alt='icon-call-24h' width='20' height='20'/>
-          Dịch vụ cấp cứu và xe cứu thương trong vòng 24 giờ : 0327 232 2323
+          Dịch vụ cấp cứu và xe cứu thương trong vòng 24 giờ : 0243 359.8363
         </div>
         <div className={cx('language')}>
            <Image src='/flagvn.jpg' width={30} height={30}/>vn
@@ -57,15 +57,15 @@ const Header = () => {
           <MdPhoneInTalk className={cx("icon-header")}/>
           <div className={cx("text-contact")}>
             <p className={cx("text-title")}>Hotline</p>
-            <p className={cx("text-p")}>0121 243 3244</p>
+            <p className={cx("text-p")}>02433.822.766</p>
           </div>
         </div>
 
         <div className={cx("item-contact")}>
           <SlLocationPin className={cx("icon-header")}/>
           <div className={cx("text-contact")}>
-            <p className={cx("text-title")}>Địa chỉ</p>
-            <p className={cx("text-p")}>54 Hạ Đình - Thanh Xuân</p>
+            <p className={cx("text-title")}>23 - 99 Nguyễn Viết Xuân</p>
+            <p className={cx("text-p")}>Quang Trung, Hà Đông, Hà Nội</p>
           </div>
         </div>
 
@@ -84,9 +84,12 @@ const Header = () => {
       <Link href={item.link}>{item.title}</Link>
       )}
      </div>
+     <div className={cx("hr")}/>
      </div>
      :
-     <Link href={d.link} className={cx("menu-link")}>{d.title}</Link>
+     <Link href={d.link} className={cx("menu-link")}>{d.title}
+     <div className={cx("hr")}/>
+     </Link>
      )}
      <button className={cx('book')}><FaCalendarAlt/>Đặt lịch khám</button>
   </div>

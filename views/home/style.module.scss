@@ -98,4 +98,40 @@
 .departments-card-button:hover{
     background-color: rgba(37, 37, 250, 0.8);
     transition: 1s ease-in;
+//news
+.news-container{
+    padding: 5% 20%;
+    background-color: #fcfcfc;
+    h2{
+        padding: 15px 0;
+        hr{
+            color:#0392ce;
+            width: 80px;
+        }
+    }
+    .news-list{
+        padding: 2% 0;
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+    }
+    .news-item-container{
+        width: 32%;
+        height: 100%;
+    }
+}
+
+
+//video
+.intro-main{
+    .video-container{
+        float: right;
+        width: 60%;
+        padding-left: 5%;
+        .video{
+            width: 100%;
+        }
+    }
+    text-align: justify;
+    text-justify: inter-word;
 }

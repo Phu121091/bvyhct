@@ -1,10 +1,11 @@
 import React from 'react';
 import { FiMapPin, FiMail, FiPhone, FiClock } from "react-icons/fi";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
     <div>
-      <footer class="bg-dark text-center text-white">
+      <footer class="bg-dark  text-white">
         <div class="container p-4">
           {/* <section class=""> */}
             <div class="row">

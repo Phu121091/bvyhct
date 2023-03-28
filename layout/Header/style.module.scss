@@ -62,7 +62,7 @@
 }
 .search{
     padding: 20px;
-    width: 30%;
+    width: 20%;
     padding-right: 0;
     position: relative;
     input{
@@ -86,6 +86,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    a{
+        transition: 0.3s;
+    }
     a:hover{
         color: #0392ce !important;
     }
@@ -108,11 +111,12 @@
     display: flex;
     align-items: center;
     font-weight: 600;
+    transition: 0.3s;
     .list-link{
         display: none;
         position: absolute;
         width: fit-content;
-        background-color: white;
+        background-color: #0392ce;
         top:100%;
         flex-direction: column;
         left: -20px;
@@ -122,11 +126,27 @@
         a{
             white-space: nowrap;
             padding: 10px 20px;
+            color: white !important;
         }
+        a:hover{
+            background-color: #016a97;
+        }
+    }
+    .hr{
+        width: 0%;
+        height: 1.5px;
+        position: absolute;
+        top: -1.5px;
+        background-color: #0392ce;
+        transition: 0.3s;
     }
 }
 .menu-link:hover{
+    color: #0392ce;
     .list-link{
         display: flex;
+    }
+    .hr{
+        width: 100%;
     }
 }
