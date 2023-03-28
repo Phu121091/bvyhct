@@ -6,7 +6,9 @@ const Footer = () => {
     <div>
       <footer class="bg-dark text-center text-white">
         <div class="container p-4">
-          {/* <section class=""> */}
+          {/* <section class=""> */}  
+          {/* <section class=""> */}  
+
             <div class="row">
 
               <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
