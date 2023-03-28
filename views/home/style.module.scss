@@ -39,3 +39,62 @@
 
     background-color: red;
 }
+
+
+
+// Department area
+
+
+.Department-container{
+
+    position: relative;
+}
+.listcards{
+    overflow-x: scroll;
+}
+.department-card-container{
+    border: 2px solid rgb(232,232,232);
+}
+.departments-card{
+    border: none;
+}
+
+.departments-card-body{
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+}
+.departments-icon-container{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.4);
+}
+.d-icon{
+    font-size:80px;
+    color: blue;
+    text-align: center;
+}
+.departments-card-item{
+    list-style: none;
+    color:  rgba(0,0,0,0.7);
+}
+
+.departments-card-button{
+    width:100px;
+    height: 35px;
+    border-radius: 20px 4px 20px 4px;
+    border: 2px solid rgb(232,232,232);
+
+}
+.department-card-container:hover .departments-icon-container{
+    background-color: rgba(37, 37, 250, 0.8);
+    transition: 1s ease-in;
+}
+.department-card-container:hover .d-icon {
+    color: white;
+}
+.departments-card-button:hover{
+    background-color: rgba(37, 37, 250, 0.8);
+    transition: 1s ease-in;
+}

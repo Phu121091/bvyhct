@@ -2,8 +2,12 @@ import React from 'react'
 import classNames from "classnames/bind";
 import style from "./style.module.scss";
 import Head from 'next/head';
-import { MdWorkOutline,MdOutlineStarBorderPurple500,MdOutlineDomainAdd, MdOutlineGroupAdd } from "react-icons/md";
+import { MdWorkOutline } from "react-icons/md";
+import { MdOutlineStarBorderPurple500 } from "react-icons/md";
+import { MdOutlineDomainAdd } from "react-icons/md";
+import { MdOutlineGroupAdd } from "react-icons/md";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
+import { GiLaserBlast,GiHealthIncrease } from "react-icons/gi";
 import  { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 const cx = classNames.bind(style);
@@ -28,6 +32,7 @@ const Introduce = () => {
 
       {/* testing ara */}
       <Carousel
+        interval={2000}
         activeIndex={index}
         onSelect={handleSelect}
         className={cx("container", "p-3", "carousel-container")}
@@ -35,12 +40,10 @@ const Introduce = () => {
         <Carousel.Item>
           <div className={cx("container")}>
             <h3 className="text-success text-center text-white">
-              VinMec là ai?
+              Chúng tôi là ai?
             </h3>
             <h6 className={cx("h6 text-center text-white")}>
-              Bệnh Viện là một hệ thống y tế Hàn Lâm do Vingroup -Tập đoàn kinh
-              tế tư nhân đa nghành tại Việt Nam đầu tư và phát triển với sứ mệnh
-              Chăm sóc bằng tài năng, y đức và sự thấu cảm.
+            Bệnh viện Y học cổ truyền (YHCT) Hà Đông tiền thân là Bệnh viện Đông y tỉnh Hà Tây thành lập theo Quyết định số 1021/TCCB ngày 20 tháng 5 năm 1968 của Ủy ban Hành chính tỉnh Hà Tây và phát triển với sứ mệnh chăm sóc bằng tài năng, y đức và sự thấu cảm.
             </h6>
             <div className={cx("container", "mt-5")}>
               <div
@@ -60,7 +63,7 @@ const Introduce = () => {
                   <MdOutlineStarBorderPurple500 className={cx("icon")} />
                   <div className="card-body">
                     <p className="card-text text-white mt-2">
-                      Bệnh viện được đạt chuẩn y tế toàn cầu
+                      Tuyến khám chữa bệnh bằng Y học cổ truyền cao nhất của Thủ đô
                     </p>
                   </div>
                 </div>
@@ -68,7 +71,7 @@ const Introduce = () => {
                   <MdOutlineDomainAdd className={cx("icon")} />
                   <div className="card-body">
                     <p className="card-text text-white mt-2">
-                      hơn 10 bệnh viện phòng khám
+                      hơn 200 giường bệnh thoải mái dành cho quý bệnh nhân gần xa
                     </p>
                   </div>
                 </div>
@@ -76,7 +79,7 @@ const Introduce = () => {
                   <MdOutlineGroupAdd className={cx("icon")} />
                   <div className="card-body">
                     <p className="card-text text-white mt-2">
-                      hơn 400 bác sĩ và chuyên gia trong và ngoài nước{" "}
+                      hơn 175 bác sĩ và thầy thuốc {" "}
                     </p>
                   </div>
                 </div>
@@ -107,7 +110,7 @@ const Introduce = () => {
                   <AiOutlineSafetyCertificate className={cx("icon")} />
                   <div className="card-body">
                     <p className="card-text text-white mt-2">
-                      Hơn 10 năm kinh nghiệm
+                      Bệnh viện đã có hơn 11 khoa và phòng
                     </p>
                   </div>
                 </div>
@@ -115,23 +118,23 @@ const Introduce = () => {
                   <MdOutlineStarBorderPurple500 className={cx("icon")} />
                   <div className="card-body">
                     <p className="card-text text-white mt-2">
-                      Bệnh viện được đạt chuẩn y tế toàn cầu
+                      Bệnh viện được đạt chuẩn y tế là bệnh viện hạng II
                     </p>
                   </div>
                 </div>
                 <div className={cx("card", "col-sm-12", "col-md-6","col-lg-3")}>
-                  <MdOutlineDomainAdd className={cx("icon")} />
+                  <GiHealthIncrease className={cx("icon")} />
                   <div className="card-body">
                     <p className="card-text text-white mt-2">
-                      hơn 10 bệnh viện phòng khám
+                      Làm chủ nhiều kỹ thuật, áp dụng nhiều phương pháp công nghệ cao trong y học
                     </p>
                   </div>
                 </div>
                 <div className={cx("card", "col-sm-12", "col-md-6","col-lg-3")}>
-                  <MdOutlineGroupAdd className={cx("icon")} />
+                  <GiLaserBlast className={cx("icon")} />
                   <div className="card-body">
                     <p className="card-text text-white mt-2">
-                      hơn 400 bác sĩ và chuyên gia trong và ngoài nước{" "}
+                      Triển khai khoa phục hồi chức năng thực hiện nhiều kỹ thuật mới như: Xung kích điều trị, Laser nội mạch, Laser chiếu ngoài,v..v
                     </p>
                   </div>
                 </div>
