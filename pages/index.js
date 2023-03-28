@@ -5,6 +5,8 @@ import style from '@/styles/Home.module.css';
 import classNames from "classnames/bind";
 import Banner from '@/components/Banner/Banner';
 import Introduce from '@/views/home/Introduce';
+import News from '@/views/home/News';
+import Introduce2 from '@/views/home/Introduce2';
 
 const cx = classNames.bind(style);
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,7 +24,9 @@ export default function Home() {
       </Head>
      <div className={cx('container')}>
       <Banner/>
+      <Introduce2/>
       <Introduce/>
+      <News/>
      </div>
     </>
   )
