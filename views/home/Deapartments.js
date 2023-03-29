@@ -12,7 +12,8 @@ const cx = classNames.bind(style);
 function Deapartments() {
     const maxRightP = -804;
     const cardwidth = 268;
-    const[nextArrowP,setNextArrowP] = useState(0)
+    const minrightP = 0;
+    const[nextArrowP,setNextArrowP] = useState(minrightP)
     const styles = {
         transform: `translate(${nextArrowP}px)`
     };
@@ -22,7 +23,7 @@ function Deapartments() {
         }
     }
     const handleonClickPreviousArrow = ()=>{
-      if(nextArrowP < 0){
+      if(nextArrowP < minrightP){
         setNextArrowP(nextArrowP + cardwidth)
       }
   }
