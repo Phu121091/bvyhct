@@ -1,9 +1,10 @@
-import { CiStethoscope } from "react-icons/ci";
+import { CiStethoscope,CiApple } from "react-icons/ci";
 import { MdAirlineSeatLegroomExtra} from "react-icons/md";
 import { GiHeartOrgan,GiTripleNeedle,GiSkeletalHand,GiMedicines} from "react-icons/gi";
-import { IoNutritionOutline} from "react-icons/io";
-import { FaStethoscope } from "react-icons/fa";
+import style from "../views/home/style.module.scss";
+import classNames from "classnames/bind";
 
+const cx = classNames.bind(style);
 export const MenuLink = [
   {
     title: "Trang chủ",
@@ -155,7 +156,7 @@ export const departments = [
             "Hợp đồng khám sức khỏe cho các cơ quan, doanh nghiệp, trường học,…",
             "Khám các chuyên khoa: Răng hàm mặt, tai mũi họng, mắt, phụ khoa, …"
         ],
-        icon:<CiStethoscope/>,
+        icon:<CiStethoscope className={cx("d-icon", "text-center")}/>,
     },
     {
         id:2,
@@ -167,7 +168,7 @@ export const departments = [
             "Bệnh ngũ quan, chấn thương.",
             "Bệnh cơ xương khớp."
         ],
-        icon:<MdAirlineSeatLegroomExtra/>,
+        icon:<MdAirlineSeatLegroomExtra className={cx("d-icon", "text-center")}/>,
     },
     {
         id:3,
@@ -179,7 +180,7 @@ export const departments = [
             "Các bệnh đường tiêu hóa.",
             "Các bệnh về thần kinh."
         ],
-        icon:<GiHeartOrgan/>,
+        icon:<GiHeartOrgan className={cx("d-icon", "text-center")}/>,
     },
     {
         id:4,
@@ -189,7 +190,7 @@ export const departments = [
             "Mất chức năng vận động sau tai nạn giao thông, tai nạn sinh hoạt.",
             "Thoát vị đĩa đệm, thoái hóa cột sống cổ, cột sống thắt lưng.",
         ],
-        icon:<GiTripleNeedle/>,
+        icon:<GiTripleNeedle className={cx("d-icon", "text-center")}/>,
     },
     {
         id:5,
@@ -199,7 +200,7 @@ export const departments = [
             "Thăm dò chức năng: Điện não đồ, Loãng xương, điện tim, nội soi dạ dày,…",
             "Xét nghiệm: Glucose, cholesterol, Nhóm máu, Acid uric,…",
         ],
-        icon:<GiSkeletalHand/>,
+        icon:<GiSkeletalHand className={cx("d-icon", "text-center")}/>,
     },
     {
         id:6,
@@ -208,7 +209,7 @@ export const departments = [
             "Bào chế , sản xuất thuốc cổ truyền, thuốc dược liệu.",
             "Cơ sở thực hành của các trường Đại học, Cao đẳng và Trung học về dược.",
         ],
-        icon:<GiMedicines/>,
+        icon:<GiMedicines className={cx("d-icon", "text-center")}/>,
     },
     {
         id:7,
@@ -217,7 +218,7 @@ export const departments = [
             "Tư vấn và điều trị bằng chế độ dinh dưỡng.",
             "Truyền thông về dinh dưỡng và an toàn thực phẩm,…",
         ],
-        icon:<IoNutritionOutline/>,
+        icon:<CiApple className={cx("d-icon", "text-center")}/>,
     },
 
 ]

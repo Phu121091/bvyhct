@@ -60,7 +60,7 @@
 }
 
 .departments-card-body{
-    height: 120px;
+    height: 112px;
     overflow: hidden;
     margin-bottom: 30px;
 
@@ -88,16 +88,52 @@
     border: 2px solid rgb(232,232,232);
 
 }
+.department-next-arrow-but{
+    padding: 3px;
+    border: 2px solid rgb(232,232,232);
+    background-color: white;
+
+
+}
+.department-previous-arrow-but{
+    padding: 3px;
+    border: 2px solid rgb(232,232,232);
+    margin-right: 5px;
+    background-color: white;
+}
+.department-previous-arrow-icon{
+    font-size:30px ;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+.department-next-arrow-icon{
+    font-size:30px ;
+    color: rgba(0, 0, 0, 0.5);
+
+}
 .department-card-container:hover .departments-icon-container{
-    background-color: rgba(37, 37, 250, 0.8);
+    background-color: #0392ce;
     transition: 1s ease-in;
 }
+
 .department-card-container:hover .d-icon {
     color: white;
 }
 .departments-card-button:hover{
-    background-color: rgba(37, 37, 250, 0.8);
+    background-color: #0392ce;
     transition: 1s ease-in;
+}
+.department-previous-arrow-but:hover {
+    background-color: #0392ce;
+}
+.department-previous-arrow-but:hover .department-previous-arrow-icon{
+    color: white;
+}
+.department-next-arrow-but:hover {
+    background-color: #0392ce;
+}
+.department-next-arrow-but:hover .department-next-arrow-icon{
+    color: white;
 }
 //news
 .news-container{

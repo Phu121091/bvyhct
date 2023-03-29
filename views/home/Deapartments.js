@@ -4,10 +4,7 @@ import style from "./style.module.scss";
 import Head from 'next/head';
 import { departments } from "@/public/data";
 import Card from 'react-bootstrap/Card';
-import { CiStethoscope } from "react-icons/ci";
-import { MdAirlineSeatLegroomExtra} from "react-icons/md";
-import { GiHeartOrgan,GiTripleNeedle,GiSkeletalHand,GiMedicines} from "react-icons/gi";
-import { IoNutritionOutline} from "react-icons/io";
+import { BsArrowLeftShort,BsArrowRightShort } from "react-icons/bs";
 
 const cx = classNames.bind(style);
 
@@ -15,12 +12,11 @@ const cx = classNames.bind(style);
 function Deapartments() {
 
   const DepartmentLists = departments.map((DepartmentLists) => (
-    <div key={DepartmentLists.id} className={cx("p-3","m-2","department-card-container")}>
+    <div key={DepartmentLists.id} className={cx("p-3","m-2","department-card-container","d-flex flex-column","justify-content-center","align-items-center")}>
       <Card className={cx("departments-card")} style={{ width: "16rem" }} >
           <div className={cx("departments-icon-container","p-3")}>
-            <CiStethoscope className={cx("d-icon", "text-center")} />
-            fghdgfshdf\dsgfhjdgfhjdgfshgf
-            {/* {DepartmentLists.icon} */}
+            {/* <CiStethoscope className={cx("d-icon", "text-center")} /> */}
+            {DepartmentLists.icon}
           </div>
           <div className={cx("departments-card-body","my-3")}>
             <Card.Title className={cx("text-center")}>{DepartmentLists.name}</Card.Title>
@@ -50,8 +46,19 @@ function Deapartments() {
         ></link>
       </Head>
         <div className={cx("container")}>
-          <h1 className='text-center'>Các Chuyên Khoa</h1>
+          <div className='d-flex justify-content-between align-items-center'>
+            <h1>Các Chuyên Khoa</h1>
+            <div>
+              <button className={cx("department-previous-arrow-but")}>
+                <BsArrowLeftShort className={cx("department-previous-arrow-icon")} />
+              </button>
+              <button className={cx("department-next-arrow-but")}>
+                <BsArrowRightShort className={cx("department-next-arrow-icon")} />
+              </button>
+            </div>
+          </div>
           <div className={cx("d-flex","listcards")}>
+
             {DepartmentLists}
           </div>
         </div>
