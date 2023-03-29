@@ -19,6 +19,7 @@ function Deapartments() {
       <Card className={cx("departments-card")} style={{ width: "16rem" }} >
           <div className={cx("departments-icon-container","p-3")}>
             <CiStethoscope className={cx("d-icon", "text-center")} />
+            fghdgfshdf\dsgfhjdgfhjdgfshgf
             {/* {DepartmentLists.icon} */}
           </div>
           <div className={cx("departments-card-body","my-3")}>
