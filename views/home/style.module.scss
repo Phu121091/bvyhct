@@ -49,8 +49,13 @@
 
     position: relative;
 }
+.departments-slider-container{
+    width: 100%;
+    overflow-x: hidden;
+}
 .listcards{
-    overflow-x: scroll;
+    width: inherit;
+    height: auto;
 }
 .department-card-container{
     border: 2px solid rgb(232,232,232);

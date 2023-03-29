@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classNames from "classnames/bind";
 import style from "./style.module.scss";
 import Head from 'next/head';
@@ -10,6 +10,22 @@ const cx = classNames.bind(style);
 
 
 function Deapartments() {
+    const maxRightP = -804;
+    const cardwidth = 268;
+    const[nextArrowP,setNextArrowP] = useState(0)
+    const styles = {
+        transform: `translate(${nextArrowP}px)`
+    };
+    const handleonClickNextArrow = ()=>{
+        if(nextArrowP > maxRightP){
+          setNextArrowP(nextArrowP - cardwidth)
+        }
+    }
+    const handleonClickPreviousArrow = ()=>{
+      if(nextArrowP < 0){
+        setNextArrowP(nextArrowP + cardwidth)
+      }
+  }
 
   const DepartmentLists = departments.map((DepartmentLists) => (
     <div key={DepartmentLists.id} className={cx("p-3","m-2","department-card-container","d-flex flex-column","justify-content-center","align-items-center")}>
@@ -36,7 +52,7 @@ function Deapartments() {
     </div>
   ));
   return (
-    <div className={cx("Department-container","mt-5")}>
+    <div className={cx("Department-container", "mt-5")}>
       <Head>
         <link
           rel="stylesheet"
@@ -44,24 +60,32 @@ function Deapartments() {
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossorigin="anonymous"
         ></link>
-      </Head>
-        <div className={cx("container")}>
-          <div className='d-flex justify-content-between align-items-center'>
-            <h1>Các Chuyên Khoa</h1>
-            <div>
-              <button className={cx("department-previous-arrow-but")}>
-                <BsArrowLeftShort className={cx("department-previous-arrow-icon")} />
-              </button>
-              <button className={cx("department-next-arrow-but")}>
-                <BsArrowRightShort className={cx("department-next-arrow-icon")} />
-              </button>
-            </div>
-          </div>
-          <div className={cx("d-flex","listcards")}>
 
+      </Head>
+      <div className={cx("container")}>
+        <div className="d-flex justify-content-between align-items-center">
+          <h1>Các Chuyên Khoa</h1>
+          <div>
+            <button className={cx("department-previous-arrow-but")}
+              onClick={handleonClickPreviousArrow}
+            >
+              <BsArrowLeftShort
+                className={cx("department-previous-arrow-icon")}
+              />
+            </button>
+            <button className={cx("department-next-arrow-but")}
+              onClick={handleonClickNextArrow}
+            >
+              <BsArrowRightShort className={cx("department-next-arrow-icon")} />
+            </button>
+          </div>
+        </div>
+        <div className={cx("departments-slider-container")}>
+          <div style={styles} className={cx("d-flex", "listcards")}>
             {DepartmentLists}
           </div>
         </div>
+      </div>
 
     </div>
   );
